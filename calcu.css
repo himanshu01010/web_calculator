@@ -1,14 +1,33 @@
 body{
     font-family : 'open sans',sans-serif;
-    background-color: black;
+    /* background-image: linear-gradient(rgba(79,51,176,1),rgba(210,53,165)); */
+    /* background-color: #e8ff73#ccdbff; */
+    margin: 0px;
+    padding: 0px;
+    /* background-color: black; */
+}
+.top_h{
+    /* padding: 1px; */
+    /* padding-left: 10px; */
+    margin: 10px;
+    background-color: #18a9de;
+    border-radius: 20px;
+}
+.h_t{
+    text-align: center;
+    font-size: 50px;
+    text-shadow: 20px #18a9de;
+    border-radius: 30px;
+
 }
 #container{
     width: 1000px;
     height: 550px;
-    /*top: 20px;*/
-    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("back_calu.jpg");
+    /* top: 5px; */
+    background-image: linear-gradient(rgba(79,51,176,1),rgba(210,53,165));
     margin: 100px auto;
     padding-top: 100px;
+    border-radius: 20px;
 }
 #calculator{
     width: 320px;
@@ -18,7 +37,8 @@ body{
     margin: 0 auto;
     position: relative;
     border-radius: 5px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19); */
+    box-shadow: 0 0 30px #000;
 }
 #result{
     height: 120px;
@@ -40,18 +60,22 @@ body{
 #keyboard{
     height: 400px; 
 }
-.operator, .number, .empty{
-    width: 50px;
-    height: 50px;
-    margin: 15px;
+.operator, .number{
+    width: 60px;
+    height: 60px;
+    margin: 10px;
     float: left;
     border-radius: 50%;
+    box-shadow: 0 0 2px #18a9de;
     border-width: 0;
     font-weight: bold;
     font-size: 15px;
+    background-color: #18a9de;
 }
 .number, .empty{
-    background-color: #eaedef;
+    /* background-color: #eaedef; */
+    box-shadow: 0 0 5px #c3eaff;
+    background-color: #c3eaff;
 }
 .number, .operator{
     cursor: pointer; 
@@ -63,10 +87,10 @@ body{
 .operator:focus, .number:focus, .empty:focus{
     outline: 0;
 }
-button:nth-child(4){
+/* button:nth-child(4){
     font-size: 20px;
     background-color: #18a9de;
-}
+} */
 button:nth-child(8){
     font-size: 20px;
     background-color: #f6d012;
@@ -79,9 +103,14 @@ button:nth-child(16){
     font-size: 20px;
     background-color: #1be6c4;
 }
-button:nth-child(20){
+button:nth-child(19){
     font-size: 20px;
-    background-color: #a1e620d2;
+    background-color: #adf9e7;
+    width: 140px;
+    border-radius: 45px;
+
+    /* background-color: #a1e620d2; */
 }
-
-
+button:hover{
+    transform: scale(1.15);
+}
